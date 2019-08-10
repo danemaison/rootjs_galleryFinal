@@ -2,13 +2,9 @@
 
 $(document).ready(initiateApp);
 
-
-
-
-
-function getPictures(reset){
+function getPictures(){
 	var pictures = JSON.parse(localStorage.getItem('pictures'));
-	if (!pictures || reset === true) {
+	if (!pictures) {
 		pictures = [
 			'images/landscape-1.jpg',
 			'images/landscape-10.jpg',
